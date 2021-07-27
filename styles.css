@@ -1,0 +1,94 @@
+body {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(16,28,132,1) 0%, rgba(81,154,244,1) 55%);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.form {
+  background-color: white;
+  width: 30%;
+  padding: 20px 20px;
+  border-radius: 20px;
+  color: #101C84;
+
+}
+
+.user-input-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.user-input-item-label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user-input {
+  border: 3px solid #101C84;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.user-input:focus, .user-input:hover {
+  border: 2px solid #519af4;
+}
+
+.user-form-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.primary-button {
+  width: 200px;
+  background-color: rgb(102, 132, 151);
+  color: white;
+  border-radius: 8px;
+  padding: 15px;
+  border: none;
+  font-size: 22px;
+  text-transform: capitalize ;
+}
+
+.secondary-button {
+  width: 200px;
+  background-color: gray;
+  color: white;
+  border-radius: 8px;
+  padding: 15px;
+  border: none;
+  font-size: 22px;
+  text-transform: capitalize ;
+}
+
+.primary-button:hover {
+  background-color: rgb(38, 91, 124);
+}
+
+.input-rdbtn-row, .input-checkbox-row {
+  display: flex;
+  justify-content: space-around;
+}
+.checkbox-item-col,.rdbtn-item-col {
+  display: flex;
+  width: min-content;
+  align-items: center;
+  justify-content: space-around;
+}
+.label-item {
+  width: max-content;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+

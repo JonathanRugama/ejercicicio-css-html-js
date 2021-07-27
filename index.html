@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Basic HTML5 Template</title>
+    <link rel="stylesheet" href="styles.css?v=1.0">
+  </head>
+  <body>
+    <main class="main">
+     
+      <form class="form">
+        <h1 class="user-form-title">Formulario de Registro</h1>
+        <div class="user-input-item">
+          <label class="user-input-item-label">Correo</label>
+          <input class="user-input" type="email" id="username" />
+        </div>
+        <div class="user-input-item">
+          <label class="user-input-item-label">Nombre completo</label>
+          <input class="user-input" type="text" id="name" />
+        </div>
+        <div class="user-input-item">
+          <label class="user-input-item-label">Fecha nacimiento</label>
+          <input class="user-input" type="date" id="birthdate" />
+        </div>
+        <div class="user-input-item">
+          <label class="user-input-item-label">Pais</label>
+          <input list="paises" class="user-input"/>
+          <datalist id="paises">
+              <option value="Costa Rica"></option>
+              <option value="Nicaragua"></option>
+              <option value="Venezuela"></option>
+              <option value="Colombia"></option>
+              <option value="Argentina"></option>
+              <option value="Mexico"></option>
+              <option value="Honduras"></option>
+              <option value="Salvador"></option>
+              <option value="Chile"></option>
+              <option value="Haiti"></option>
+              <option value="Panama"></option>
+              <option value="Brazil"></option>
+              <option value="Uruguay"></option>
+          </datalist>
+        </div>
+        <div class="user-input-item">
+          <label class="user-input-item-label">Sexo</label>
+          <div class="input-rdbtn-row">
+  
+            <div class="rdbtn-item-col">
+              <input name="gender" id="male" class="user-input" type="radio" value="Masculino"/>
+              <label class="label-item" for="male">Masculino</label>
+            </div>
+            <div class="rdbtn-item-col">
+              <input name="gender" id="female" class="user-input" type="radio" value="Femenino"/>
+              <label class="label-item" for="female">Femenino</label>
+            </div>
+            <div class="rdbtn-item-col">
+              <input name="gender" id="other" class="user-input" type="radio" value="Otro"/>
+              <label class="label-item" for="other">Otro</label>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+        <div class="user-input-item">
+          <label class="user-input-item-label">Hobbies</label>
+          <div class="input-checkbox-row">
+  
+            <div class="checkbox-item-col">
+              <input type="checkbox" id="hobbie1" name="hobbie1" value="Leer">
+              <label class="label-item" for="hobbie1">Leer</label>
+            </div>
+            <div class="checkbox-item-col">
+              <input type="checkbox" id="hobbie2" name="hobbie2" value="Escuchar música">
+              <label class="label-item" for="hobbie2">Escuchar música</label>
+            </div>
+            <div class="checkbox-item-col">
+              <input type="checkbox" id="hobbie3" name="hobbie3" value="Andar en bicicleta">
+              <label class="label-item" for="hobbie2">Andar en bicicleta</label>
+            </div>
+  
+          </div>
+          
+        </div>
+        <div class="button-container">
+          <button onclick="submitForm()" class="primary-button" type="button">registrarse</button>
+          <button class="secondary-button" type="button">cancelar</button>
+        </div>
+       
+      </form>
+    </main>
+    
+    <!--div>
+      
+      <h1 id="title">Hello World!</h1>
+      <ul name="prueba" id="list"></ul>
+    </div-->
+    <script src="scripts.js"></script>
+  </body>
+</html>
